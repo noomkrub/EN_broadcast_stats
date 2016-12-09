@@ -1,6 +1,6 @@
 <?php
 // EN call
-// http://e-activist.com/ea-dataservice/data.service?service=EaBroadcastInfo&token=ae10da26-53aa-461d-a7c6-99e60cdf12b6&contentType=json&startRow=0&endRow=100
+// http://e-activist.com/ea-dataservice/data.service?service=EaBroadcastInfo&token=TOKEN&contentType=json&startRow=0&endRow=100
 /*
 name		value					type		format
 clientId	1827					xs:int	
@@ -53,7 +53,7 @@ while ($stop<1600){
 
 
 $datasource="https://e-activist.com/ea-dataservice/data.service";
-$en_token="ae10da26-53aa-461d-a7c6-99e60cdf12b6";
+$en_token="PUBLIC TOKEN";
 $settings="service=EaBroadcastInfo&token=$en_token&contentType=json&startRow=$start&endRow=$stop";
 
 $ch = curl_init();
